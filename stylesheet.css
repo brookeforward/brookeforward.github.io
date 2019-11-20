@@ -34,7 +34,6 @@ li.drop {
     display: none;
     position: absolute;
     color: black;
+    background-color:yellow;
     padding: 12px 16 px;
-    display: block;
-    text-align: left;
 }
