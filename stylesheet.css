@@ -23,20 +23,16 @@ li a, .dropbtn {
     padding: 14px 16px;
 }
 
-li a {
-    display: block;
-    padding: 8px 16px;
-}
-
 li a:hover, .drop:hover .dropbtn {
     background-color: red;
 }
 
-.active {
-    background-color: pink;
-}
+li.drop {
+    display:inline-block;
 
 .drop-content a {
+    display: none;
+    position: absolute;
     color: black;
     padding: 12px 16 px;
     display: block;
