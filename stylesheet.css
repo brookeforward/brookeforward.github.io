@@ -20,7 +20,7 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .drop:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -28,7 +28,7 @@ li.drop {
   display: inline-block;
 }
 
-.drop-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -37,7 +37,7 @@ li.drop {
   z-index: 1;
 }
 
-.drop-content a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -45,10 +45,10 @@ li.drop {
   text-align: left;
 }
 
-.drop-content a:hover {
+.dropdown-content a:hover {
 	background-color: #f1f1f1;
 }
 
-.drop:hover .drop-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
