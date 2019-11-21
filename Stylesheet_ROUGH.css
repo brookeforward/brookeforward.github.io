@@ -9,14 +9,18 @@ ul {
     position: sticky;
     top: 0;
     width: 100%;
-    text-decoration: none;
 }
 
 li {
     float: left;
 {
+    
+li a {
+   padding: 10px 15px;
+   text-decoration:none;  
+}
    
-li a:hover, .dropdown:hover, .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: red;
     }
 
@@ -41,6 +45,7 @@ li a:hover, .dropdown:hover, .dropbtn {
 
 .dropdown-content a:hover {
     background-color: pink;
+    padding: 10px 15px;
 }
 
 .dropdown:hover .dropbtn {
