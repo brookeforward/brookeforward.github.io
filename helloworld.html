@@ -1,15 +1,19 @@
-<!DOCTYPE html>                      /* declare the application as HTML5
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>   
+    <title>Item 2 - Overview example</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Stylesheet_ROUGH.css">
+
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+    /* sets the CSS for the map div */
       #map {
-        height: 100%;
+        width: 100%;
+        height: 100%;                /* always set the map height to define the size of the div element containing the map */
+        /* background-color: grey;   /* set background color to be grey to see where map will be on webpage */
       }
+      
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -18,18 +22,32 @@
       }
     </style>
   </head>
+
   <body>
-    <div id="map"></div>            /* create div element named map to hold the map 
+
+    <h1>Item 2 - Overview Example</h1>
+    
+    <ul class="navbar">
+      <li><a href="index.html">Item 1</a></li>
+      <li><a href="item2.html">Item 2</a></li>
+      <li class="active"><a href="helloworld.html">Item 2 - Overview</a></li>
+      <li><a href="#">Meet the Crew</a></li>
+      <li><a href="#">Something Super Long</a></li>
+    </ul>
+
+    <div id="map"></div>
     <script>
       var map;
-      function initMap() {          /* define a JavaScript function that creates a map in the div
+      function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
           zoom: 8
         });
       }
-    </script>                       /* load the maps JavaScript API using a sccript tag
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA&callback=initMap"
     async defer></script>
+
   </body>
 </html>
