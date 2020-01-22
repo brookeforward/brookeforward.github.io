@@ -38,6 +38,37 @@
       center: {lat: 65.02736, lng: -18.32836},
     });
     
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">NAUTHOLSVIK GEOTHERMAL BEACH</h1>'+
+      '<div id="bodyContent">'+
+      '<p>Type: Beach</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      title: 'NAUTHOLSVIK GEOTHERMAL BEACH'
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  }
+    
+    
+    
+    
+    
+    
     // Create an array of alphabetical characters used to label the markers.
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     
