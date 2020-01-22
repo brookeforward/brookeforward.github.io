@@ -38,18 +38,18 @@
     // initMap function initializes & adds the map when the webpage loads
     function initMap() {
       // the location of Uluru
-      var uluru = {lat: -25.344, lng: 131.036};
+      var iceland = {lat: 65.02736, lng: -18.32836};
       // new google.maps.Maps creates a new google maps object
       // getElementById() function finds the map div on the webpage
       // center property tells the API where to place the map
       // zoom property specfies the zoom level for the map
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4, 
-        center: uluru
+        zoom: 5, 
+        center: iceland
       });
       // position property sets the position of the marker
       var marker = new google.maps.Marker({
-        posotion: uluru, 
+        posotion: iceland, 
         map: map
       });
     }
