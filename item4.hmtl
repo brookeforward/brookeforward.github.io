@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Lab Practical 1</title>
+    
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 500px; 
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+    
+  </head>
+  
+  <body>
+    <h1>Lab Practical</h1>
+  
+    <h2>Q4 - Option 1</h2>
+  
+    <h3>Map Title</h3>
+  
+    <!--The div element for the map -->
+    <div id="map"></div>
+    
+    <script>
+    
+    // Initialize and add the map
+  function initMap() {
+    // The map, centered at Uluru
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4, 
+      center: {place_id: ChIJQ2Dro1Ir0kgRmkXB5TQEim8}
+    });
+    
+    // Create an array of alphabetical characters used to label the markers.
+    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    
+    // Add some markers to the map.
+    // Note: The code uses the JavaScript Array.prototype.map() method to
+    // create an array of markers based on a given "locations" array.
+    // The map() method here has nothing to do with the Google Maps API.
+    var markers = locations.map(function(location, i) {
+      return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length]
+      });
+    });
+    
+    // Add a marker clusterer to manage the markers.
+    var markerCluster = new MarkerClusterer(map, markers,
+      {imagePath: 'https://brookeforward.github.io/m5.png'});
+    }
+
+    var locations = [
+        {place_id: ChIJ2VqXY0gL1kgR-4N6SCPKW70},
+        {place_id: ChIJIeuN0Jd01kgRK5NaIaDgb50},
+        {place_id: ChIJybZFr3Sl1kgRARZBC9tHYyw},
+        {place_id: ChIJQx6ihstf1kgR4wuu2I9A_hM},
+        {place_id: ChIJe2kT-x-B1kgR8mKSB4tsdWs},
+        {place_id: ChIJlf3wrR6B1kgRV27jl6py3Ug},
+        {place_id: ChIJvaJDdjBI10gRkLWgMXnFq5w},
+        {place_id: ChIJ26L9HMDZ0UgRBvPLGXYASIk},
+        {place_id: ChIJVVVVVYnWz0gRUKfoRXoc8a0},
+        {place_id: ChIJlb1xzQufzUgR2qcpSYRRgU4},
+        {place_id: ChIJeWRb4ZMKzUgRgP4L8GJhBTo},
+        {place_id: ChIJve4v3_CezUgREZX9xdn26Hk},
+        {place_id: ChIJYS_-x-Gl1UgRuKwlzD-75J4},
+        {place_id: ChIJ2VqXY0gL1kgR-4N6SCPKW70},
+      ]
+
+    </script>
+    
+    <script src="https://brookeforward.github.io/markerclusterer.js">
+    </script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA&callback=initMap">
+    </script>
+  
+  </body>
+
+</html>
+  
