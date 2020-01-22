@@ -30,6 +30,7 @@
     </ul>
 
     <h2>Q2 - A - Overview Example</h2>
+    
     <!-- div element below defines an area of the page for the map -->
     <div id="map"></div>
     
@@ -54,9 +55,9 @@
     }
         </script>
         
-      // async attribute allows the browser to continue rendering the rest of the page while the API loads
-      // key paramter contains API key
-      // callback parameter executes the initMap function after the API loads  
+      <!-- async attribute allows the browser to continue rendering the rest of the page while the API loads
+           key paramter contains API key
+           callback parameter executes the initMap function after the API loads -->
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA&callback=initMap">
         </script>
@@ -67,13 +68,13 @@
     
     <h2>Place Details</h2>
     
-    /* output = json or xml
+    <!-- output = json or xml
        key & place_id are required
        optional parameters = language, region, formatted_address, sessiontoken, fields, etc. 
-       fields parameter specifys a comma-separated list of place data types to return */
+       fields parameter specifys a comma-separated list of place data types to return -->
     <p>https://maps.googleapis.com/maps/api/place/details/output?parameters</p>
     
-    /* setting place_id to paris, & region to canada (.ca) */
+    <!-- setting place_id to paris, & region to canada (.ca) -->
     <p>https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJsamfQbVtLIgR-X18G75Hyi0&region=.ca&fields=name,geometry&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA</p>
     ChIJ_21BPMh51kwR62D0aOu7bUM
     <a href="https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJsamfQbVtLIgR-X18G75Hyi0&region=.ca&fields=name,geometry&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA">Places link</a>
