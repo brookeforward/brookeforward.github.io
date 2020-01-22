@@ -33,9 +33,10 @@
     // Initialize and add the map
   function initMap() {
     // center map on iceland
+    var iceland = {lat: 65.02736, lng: -18.32836};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 5, 
-      center: {lat: 65.02736, lng: -18.32836},
+      center: iceland
     });
     
     var contentString = '<div id="content">'+
