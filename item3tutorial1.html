@@ -2,6 +2,8 @@
 <html>
   
   <head>
+    <title>Lab Practical 1</title>
+    
     <style>
        /* Set the size of the div element that contains the map */
       #map {
@@ -13,7 +15,19 @@
   
   <body>
     
-    <h3>My Google Maps Demo</h3>
+    <h1>Lab Practical</h1>
+    
+    <ul class="navbar">
+      <li class="active"><a href="index.html">Q1</a></li>
+      <li><a href="item2.html">Q2-A</a></li>
+      <li><a href="item3tutorial1.html">Q3-A</a></li>
+      <li><a href="item3tutorial2.html">Q3-B</a></li>
+      <li><a href="item3tutorial3.html">Q3-C</a></li>
+      <li><a href="item3tutorial3heatmap.html">Q3-Heatmap</a></li>
+      <li><a href="item4.html">Q4</a></li>
+    </ul>
+    
+    <h2>Q3 - Tutorial 1 - Adding a Marker</h2>
     
     <!--The div element for the map -->
     <div id="map"></div>
@@ -42,8 +56,7 @@
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
+    * The callback parameter executes the initMap() function -->
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA&callback=initMap">
     </script>
