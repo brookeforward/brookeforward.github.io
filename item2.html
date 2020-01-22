@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Item 2</title>
+    <title>Q2</title>
     <link rel="stylesheet" type="text/css" href="Stylesheet_ROUGH.css">
 
     <style>
@@ -15,8 +15,6 @@
   </head>
 
   <body>
-
-    <h1>Item 2</h1>
     
     <ul class="navbar">
       <li><a href="index.html">Item 1</a></li>
@@ -26,7 +24,7 @@
       <li><a href="#">Something Super Long</a></li>
     </ul>
 
-    <h2>Overview example</h2>
+    <h1>Q2 - A - Overview Example</h1>
     <!-- div element below defines an area of the page for the map -->
     <div id="map"></div>
     
@@ -58,11 +56,22 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA&callback=initMap">
         </script>
 
-    <h2>Get Started Instructions for Directions</h2>
-    <p>AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA</p>
+    <h1>Get Started Instructions for Directions</h1>
+    <p>https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA</p>
+    <a href="https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA">Directions link</a>
     
-    <h2>Place Details</h2>
+    <h1>Place Details</h1>
+    
+    // output = json or xml
+    // key & place_id are required
+    // optional parameters = language, region, formatted_address, sessiontoken, fields, etc. 
+    // fields parameter specifys a comma-separated list of place data types to return
     <p>https://maps.googleapis.com/maps/api/place/details/output?parameters</p>
+    
+    // setting place_id to paris, & region to canada (.ca)
+    <p>https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJsamfQbVtLIgR-X18G75Hyi0&region=.ca&fields=name,geometry&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA</p>
+    ChIJ_21BPMh51kwR62D0aOu7bUM
+    <a href="https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJsamfQbVtLIgR-X18G75Hyi0&region=.ca&fields=name,geometry&key=AIzaSyBTZ9QU96UYdQ_6QhLi8c0axd_pFrCDeKA">Places link</a>
     
     
   </body>
